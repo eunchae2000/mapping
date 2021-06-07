@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/productSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="@font/wemakeprice_bold"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:text="Online"
+        android:gravity="center"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:id = "@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:fontFamily="@font/wemakeprice_bold"
+                android:id="@+id/textview_online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30sp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="@font/wemakeprice_bold"
+        android:id="@+id/move"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Offline"
+        android:textSize="20dp"
+        android:background="@color/black"
+        android:textColor="@color/white">
+    </TextView>
+
+    <ScrollView
+        android:id = "@+id/offline"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:fontFamily="@font/wemakeprice_bold"
+            android:id="@+id/textview_Offline"
+            android:layout_width="match_parent"
+            android:padding="30sp"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
